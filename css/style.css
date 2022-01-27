@@ -1,0 +1,561 @@
+body {
+  background: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  position: relative;
+}
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 400;
+}
+
+.heading {
+  font-size: 50px;
+  font-weight: 500;
+}
+.subheading {
+  font-size: 17px;
+  font-weight: 400;
+  padding-bottom: 50px;
+}
+.bold {
+  font-weight: 500;
+}
+
+p {
+  letter-spacing: 0px;
+  line-height: 28px;
+}
+
+#about,
+#cennik,
+#contact {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+#about .fas {
+  font-size: 28px;
+  min-width: 34px;
+}
+
+/* start navigation */
+#strefa {
+  font-size: 33px;
+  font-weight: 500;
+}
+.custom-navbar {
+  background: #ffffff;
+  margin-bottom: 0;
+}
+.custom-navbar .navbar-brand {
+  color: #5b5b5a;
+  font-size: 35px;
+}
+.custom-navbar .navbar-brand .navbar-toggle {
+  background: #55acee;
+  padding: 4px 6px;
+  font-size: 16px;
+  color: #fff;
+}
+.custom-navbar .nav li a {
+  color: #5b5b5a;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  transition: all 0.3s ease-in-out;
+}
+.custom-navbar .nav li a:hover {
+  background: #cecece;
+  transition: all 0.3s ease-in-out;
+}
+.custom-navbar .nav > li > a:focus {
+  background-color: transparent;
+  outline: none;
+}
+.custom-navbar .nav li.active > a {
+  background-color: #cecece;
+}
+.custom-navbar .navbar-toggle {
+  border: none;
+  padding-top: 10px;
+}
+.custom-navbar .navbar-toggle .icon-bar {
+  background: #5b5b5a;
+  border-color: transparent;
+}
+@media (min-width: 770px) {
+  .custom-navbar {
+    background: #ffffff;
+    padding: 15px;
+    border-bottom: 0;
+    background: 0 0;
+  }
+  .custom-navbar.top-nav-collapse {
+    padding: 14px;
+    background: #fff;
+    border-bottom: 1px solid #eeeeee;
+  }
+}
+
+/* home section */
+#home {
+  background: url("../images/background.png") no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  margin-top: 81px;
+}
+#home hr {
+  border: 2px solid #5b5b5a;
+  width: 125px;
+  border-radius: 40px;
+}
+#home h3 {
+  letter-spacing: 2px;
+}
+#home .btn {
+  background: transparent;
+  border-radius: 0;
+  border: 3px solid #5b5b5a;
+  color: #464646;
+  font-weight: 500;
+  padding: 16px 42px;
+  margin-top: 40px;
+  transition: all 0.4s ease-in-out;
+}
+#home .btn:hover {
+  background: #404040;
+  color: #ffffff;
+}
+#home h1 {
+  color: #000000;
+}
+
+/* about section */
+.heading_bold {
+  font-size: 50px;
+  font-weight: 500;
+}
+#about {
+  padding-top: 100px;
+  padding-bottom: 120px;
+}
+
+#about .col-md-4 .fas {
+  background: #5b5b5a;
+  border-radius: 50%;
+  color: #ffffff;
+  font-size: 32px;
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+#about .col-lg-4 {
+  text-align: center;
+}
+#about .col-md-6 {
+  padding-top: 60px;
+}
+#about .col-md-6 h3 {
+  padding-top: 40px;
+  padding-bottom: 10px;
+}
+#about .col-md-6 p {
+  padding-bottom: 30px;
+}
+#about span {
+  display: block;
+  padding-bottom: 6px;
+}
+#about_p {
+  font-size: 17px;
+  font-weight: 500;
+}
+#about .paragraph {
+  font-size: 15px;
+  font-weight: 300;
+}
+
+/* zabiegi section */
+#zabiegi {
+  padding-top: 85px;
+  background: #f9f9f9;
+  text-align: center;
+}
+#zabiegi .container {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+#zabiegi .row2 {
+  padding-bottom: 50px;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+#zabiegi .btn {
+  padding: 13px;
+  margin-top: 5px;
+  font-size: 16px;
+}
+#btn-regulamin {
+  font-weight: 700;
+}
+#zabiegi .col-md-4 {
+  padding: 0;
+  margin: 0;
+}
+#zabiegi .subheading-zabiegi {
+  font-size: 17px;
+  font-weight: 400;
+  padding-bottom: 40px;
+}
+#myCarousel {
+  margin-left: 100px;
+  margin-right: 100px;
+  background-color: #f9f9f9;
+  max-width: 1000px;
+  height: 100%;
+  text-align: center;
+  margin: auto;
+}
+.carousel-control.left,
+.carousel-control.right {
+  background-image: none !important;
+  filter: none !important;
+  color: #f9f9f9;
+}
+
+/* galeria section */
+#galeria {
+  padding-top: 85px;
+  background: #f9f9f9;
+  text-align: center;
+}
+#galeria .heading {
+  margin-bottom: 100px;
+}
+#galeria .container {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+#galeria .row2 {
+  padding-bottom: 50px;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+#galeria .btn {
+  padding: 13px;
+  margin-top: 5px;
+  font-size: 16px;
+}
+#galeria .col-md-4 {
+  padding: 0;
+  margin: 0;
+}
+#galeria .subheading-zabiegi {
+  font-size: 17px;
+  font-weight: 400;
+  padding-bottom: 40px;
+}
+#galeria img {
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+}
+#myCarousel2 {
+  margin-left: 100px;
+  margin-right: 100px;
+  background-color: #f9f9f9;
+  max-width: 1400px;
+  height: 100%;
+  text-align: center;
+  margin: auto;
+}
+/* cennik section */
+#cennik {
+  text-align: center;
+}
+#cennik h3 {
+  color: #5b5b5a;
+  line-height: 4px;
+}
+#cennik .cennik-des {
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+/* contact section */
+#contact {
+  background: #f9f9f9;
+  text-align: center;
+}
+.heading-contact {
+  margin-bottom: 60px;
+  margin-top: -20px;
+}
+#contact .fas {
+  font-size: 40px;
+}
+#contact .far {
+  font-size: 40px;
+}
+#contact form {
+  padding-top: 70px;
+}
+#contact .form-control {
+  border-radius: 0;
+  box-shadow: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  transition: all 0.4s ease-in-out;
+}
+#contact .form-control:focus {
+  border: 2px solid #5b5b5a;
+}
+#contact input {
+  height: 50px;
+}
+#contact input[type="submit"] {
+  border: 2px solid #808080;
+  margin-top: 25px;
+  height: 54px;
+}
+#contact input[type="submit"]:hover {
+  background: #808080;
+  color: #ffffff;
+}
+#contact textarea {
+  height: 170px;
+}
+.contact-info-box h3 {
+  font-size: 16px;
+}
+
+/* footer section */
+footer {
+  background: url("../images/footer3.png") no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+.social-icon {
+  padding: 0;
+  text-align: center;
+  vertical-align: middle;
+}
+.social-icon li {
+  list-style: none;
+  display: inline-block;
+  padding: 0;
+}
+.social-icon li a {
+  border-radius: 40%;
+  color: #303030;
+  font-size: 80px;
+  width: 110px;
+  height: 110px;
+  line-height: 110px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.4s ease-in-out;
+  margin-top: 20px;
+}
+.social-icon li a:hover {
+  background: #d1d1d1;
+}
+
+/* copyright section */
+#copyright {
+  background: #404040;
+  color: #ffffff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#copyright p {
+  padding-top: 20px;
+  font-weight: 300;
+}
+#copyright a {
+  color: #fff;
+}
+#copyright a:hover {
+  color: #5b5b5a;
+  text-decoration: none;
+  transition: all 0.4s ease-in-out;
+}
+#copyright .fa {
+  background: #383838;
+  color: #ffffff;
+  font-size: 18px;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  transition: all 0.4s ease-in-out;
+}
+#copyright .fa:hover {
+  background: #5b5b5a;
+  color: #000;
+}
+
+@media screen and (min-width: 1000px) {
+  @-moz-document url-prefix() {
+    #zabiegi .col-lg-4,
+    #zabiegi .col-md-4 {
+      width: 33.333%;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px min-width: 767px) {
+  .custom-navbar .navbar-brand {
+    font-size: 1px;
+  }
+  #about img {
+    padding-top: 40px;
+  }
+  #contact form {
+    padding-top: 30px;
+  }
+  #contact input[type="submit"] {
+    border: 2px solid #808080;
+    margin-top: 25px;
+    height: 54px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .contact-info-box {
+    margin-bottom: 20px;
+  }
+  .contact-info-box:last-child {
+    margin-bottom: 0;
+  }
+  .navbar-brand {
+    margin-bottom: 3px;
+  }
+  #home {
+    margin-top: 30px;
+  }
+  #myCarousel {
+    margin-left: 30px;
+    margin-right: 30px;
+    background-color: #f9f9f9;
+    max-width: 700px;
+    text-align: center;
+  }
+  .contact-info-box {
+    padding-bottom: 20px;
+  }
+  #zabiegi .subheading-zabiegi {
+    margin-bottom: -20px;
+  }
+  #zabiegi .row2 {
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: -20px;
+  }
+  #zabiegi .btn {
+    font-size: 14px;
+    padding: 6px;
+  }
+  .heading {
+    margin-top: -30px;
+  }
+  #galeria .heading {
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 500px) {
+  #home h3 {
+    letter-spacing: 1px;
+  }
+  .heading_bold {
+    font-size: 40px;
+    font-weight: 400;
+  }
+  #strefa {
+    font-size: 30px;
+  }
+  .heading {
+    font-size: 30px;
+    font-weight: 400;
+  }
+  .subheading .subheading-zabiegi {
+    font-size: 12px;
+    font-weight: 300;
+  }
+  .contact-info-box h3 {
+    font-size: 12px;
+    margin-bottom: -40px;
+  }
+  #zabiegi .row2 {
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: -10px;
+  }
+  #zabiegi .btn {
+    font-size: 14px;
+    padding: 6px;
+    white-space: normal;
+  }
+  #copyright p {
+    font-weight: 200;
+  }
+  #strefa {
+    font-weight: 400;
+  }
+  .bold {
+    font-weight: 400;
+  }
+  .fa-envelope {
+    margin-top: 25px;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .heading_bold {
+    font-size: 28px;
+  }
+  h3 {
+    font-size: 15px;
+  }
+  #home .btn {
+    padding: 8px 21px;
+  }
+}
+@media screen and (max-width: 302px) {
+  #strefa {
+    font-size: 24px;
+  }
+}
