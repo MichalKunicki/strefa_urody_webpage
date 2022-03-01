@@ -212,9 +212,9 @@ p {
   margin: 0;
 }
 #zabiegi .row2 {
-  padding-bottom: 50px;
+  /* padding-bottom: 50px;
   padding-left: 80px;
-  padding-right: 80px;
+  padding-right: 80px; */
 }
 #zabiegi .btn {
   padding: 13px;
@@ -227,16 +227,12 @@ p {
 #zabiegi .subheading-zabiegi {
   font-size: 17px;
   font-weight: 400;
-  padding-bottom: 40px;
 }
 #myCarousel {
-  margin-left: 100px;
-  margin-right: 100px;
   background-color: #f9f9f9;
-  max-width: 1000px;
-  height: 100%;
   text-align: center;
   margin: auto;
+  max-width: 600px;
 }
 .carousel-control.left,
 .carousel-control.right {
@@ -273,28 +269,14 @@ p {
   margin-top: 5px;
   font-size: 16px;
 }
-#galeria .col-md-4 {
+/* #galeria .col-md-4 {
   padding: 0;
   margin: 0;
-}
+} */
 #galeria .subheading-zabiegi {
   font-size: 17px;
   font-weight: 400;
   padding-bottom: 40px;
-}
-#galeria img {
-  /* width: 100%;
-  height: auto;
-  max-height: 100%; */
-}
-#myCarousel2 {
-  /* margin-left: 100px;
-  margin-right: 100px;
-  background-color: #f9f9f9;
-  max-width: 1400px;
-  height: 100%;
-  text-align: center;
-  margin: auto; */
 }
 #myCarousel2 .carousel-inner img {
   max-height: 800px;
@@ -313,9 +295,8 @@ p {
   padding-top: 20px;
   padding-bottom: 40px;
 }
-#cennik img {
-  max-height: 900px;
-  margin: auto;
+#cennik .row {
+  align-content: center;
 }
 
 /* contact section */
@@ -439,43 +420,45 @@ footer {
 
 @media screen and (min-width: 1000px) {
   @-moz-document url-prefix() {
-    #zabiegi .col-lg-4,
+    /* #zabiegi .col-lg-4,
     #zabiegi .col-md-4 {
       width: 33.333%;
-    }
+    } */
   }
 }
 
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1050px) {
   /* zabiegi section */
   #zabiegi {
     background: #f9f9f9;
-    display: flex;
-    flex: 1;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 60px;
-    padding-right: 60px;
   }
   #zabiegi .container {
     width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly; 
+  }
+  #zabiegi .row {
     flex-grow: 1;
   }
   #zabiegi .row2 {
     display: flex;
     flex-direction: column;
-    align-items: stretch;
-    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    order: 2;
+  }
+  #myCarousel {
+    /* flex-grow: 1; */
+    order: 1;
   }
   #zabiegi .btn {
     padding: 8px;
     margin-top: 5px;
     font-size: 16px;
+    min-width: 200px;
     max-width: 200px;
     white-space: normal;
   }
@@ -487,8 +470,6 @@ footer {
     font-weight: 400;
     text-align: center;
   }
-  #myCarousel {
-  }
   .carousel-inner img {
     max-height: 800px;
     min-width: auto;
@@ -498,10 +479,14 @@ footer {
   .carousel-control.right {
     background-image: none !important;
     filter: none !important;
-    color: #f9f9f9;
+    color: #dfdfdf;
+  }
+  #cennik img {
+    max-height: 900px;
+    margin: auto;
   }
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1050px) {
   .custom-navbar .navbar-brand {
     font-size: 1px;
   }
@@ -516,10 +501,22 @@ footer {
     margin-top: 25px;
     height: 54px;
   }
+  #zabiegi .row2 {
+    padding-bottom: 50px;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+  #zabiegi .subheading-zabiegi {
+    padding-bottom: 40px;
+  }  
   #myCarousel {
     background-color: #f9f9f9;
     max-width: 750px;
     text-align: center;
+  }  
+  #cennik img {
+    max-height: 1200px;
+    margin: auto;
   }
 }
 
