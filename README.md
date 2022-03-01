@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # TITLE: STREFA URODY COSMETOLOGY SALON BUSINESS WEBSITE
 
 #### WEBSITE LINK: https://strefaurodybialystok.com/
