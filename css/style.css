@@ -54,8 +54,12 @@ p {
   font-weight: 500;
 }
 .custom-navbar {
-  background: #ffffff;
-  margin-bottom: 0;
+  height: 80px;
+  width: 100%;
+  background: #fff;
+  position: fixed;
+  z-index: 3;
+  padding: 15px;
 }
 .custom-navbar .navbar-brand {
   color: #5b5b5a;
@@ -67,6 +71,17 @@ p {
   font-size: 16px;
   color: #fff;
 }
+.navbar-collapse {
+  background-color: #fff;
+}
+/* .custom-navbar ul {
+  position: absolute;
+  z-index: 3;
+  background-color:
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} */
 .custom-navbar .nav li a {
   color: #5b5b5a;
   font-size: 13px;
@@ -94,19 +109,6 @@ p {
 .custom-navbar .navbar-toggle .icon-bar {
   background: #5b5b5a;
   border-color: transparent;
-}
-@media (min-width: 770px) {
-  .custom-navbar {
-    background: #ffffff;
-    padding: 15px;
-    border-bottom: 0;
-    background: 0 0;
-  }
-  .custom-navbar.top-nav-collapse {
-    padding: 14px;
-    background: #fff;
-    border-bottom: 1px solid #eeeeee;
-  }
 }
 
 /* home section */
@@ -277,19 +279,21 @@ p {
   margin: auto;
 }
 /* cennik section */
-#cennik {
+#cennik .container {
   text-align: center;
 }
 #cennik h3 {
   color: #5b5b5a;
   line-height: 4px;
 }
-#cennik .cennik-des {
-  padding-top: 20px;
-  padding-bottom: 40px;
+#cennik .flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
-#cennik .row {
-  align-content: center;
+#cennik .img-responsive {
+  padding: 8px 20px 8px 20px;
 }
 
 /* contact section */
@@ -518,6 +522,11 @@ footer {
   }
   .contact-info-box:last-child {
     margin-bottom: 0;
+  }
+  .custom-navbar {
+    height: 53px;
+    width: 100%;
+    padding: 0;
   }
   .navbar-brand {
     margin-bottom: 3px;
