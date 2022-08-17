@@ -74,14 +74,6 @@ p {
 .navbar-collapse {
   background-color: #fff;
 }
-/* .custom-navbar ul {
-  position: absolute;
-  z-index: 3;
-  background-color:
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-} */
 .custom-navbar .nav li a {
   color: #5b5b5a;
   font-size: 13px;
@@ -109,6 +101,25 @@ p {
 .custom-navbar .navbar-toggle .icon-bar {
   background: #5b5b5a;
   border-color: transparent;
+}
+/* temporary message section */
+
+.temporary-message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 80px;
+  height: 80px;
+  z-index: 3;
+  font-size: 14px;
+  padding: 15px;
+  text-align: center;
+  background-color: orange;
+}
+.temporary-message p {
+  margin: 0;
+  line-height: 18px;
 }
 
 /* home section */
@@ -415,15 +426,6 @@ footer {
   color: #000;
 }
 
-@media screen and (min-width: 1000px) {
-  @-moz-document url-prefix() {
-    /* #zabiegi .col-lg-4,
-    #zabiegi .col-md-4 {
-      width: 33.333%;
-    } */
-  }
-}
-
 @media screen and (min-width: 1050px) {
   /* zabiegi section */
   #zabiegi {
@@ -528,6 +530,10 @@ footer {
     width: 100%;
     padding: 0;
   }
+  .temporary-message {
+    top: 53px;
+    height: 100px;
+  }
   .navbar-brand {
     margin-bottom: 3px;
   }
@@ -564,6 +570,10 @@ footer {
   }
 }
 @media screen and (max-width: 500px) {
+  .temporary-message {
+    font-size: 13px;
+    height: 120px;
+  }
   #home h3 {
     letter-spacing: 1px;
   }
@@ -611,6 +621,9 @@ footer {
 }
 
 @media screen and (max-width: 330px) {
+  .temporary-message {
+    height: 140px;
+  }
   .heading_bold {
     font-size: 28px;
   }
@@ -624,5 +637,8 @@ footer {
 @media screen and (max-width: 302px) {
   #strefa {
     font-size: 24px;
+  }
+  .temporary-message {
+    height: 220px;
   }
 }
