@@ -328,18 +328,6 @@ p {
   padding: 5px 5px;
 }
 
-/* pakiety section */
-#pakiety .flex {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-#pakiety .img-responsive {
-  width: 100%;
-  max-width: 650px;
-  padding: 5px;
-}
-
 /* contact section */
 #contact {
   background: #f9f9f9;
@@ -477,9 +465,6 @@ footer .container::before {
   #cennik .container {
     width: max-content;
   }
-  #pakiety .container {
-    width: max-content;
-  }
 }
 @media screen and (min-width: 1060px) {
   /* zabiegi section */
@@ -535,7 +520,7 @@ footer .container::before {
     color: #dfdfdf;
   }
   #cennik img {
-    max-height: 900px;
+    max-height: 1200px;
     margin: auto;
   }
 }
