@@ -20,7 +20,7 @@
     />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/animate.min.css" />
-    <link rel="stylesheet" href="css/stylesV2.4.css" />
+    <link rel="stylesheet" href="css/stylesV2.5.css" />
   </head>
   <body data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
     <!-- navigation section -->
@@ -465,6 +465,84 @@
       </div>
     </section>
 
+
+    <!-- contact section -->
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12 text-center">
+            <h1 class="heading heading-contact">Kontakt</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="contact-info-box col-md-4 col-sm-6 col-xs-6">
+            <i class="fas fa-mobile-alt"></i>
+            <h3 id="contact_info">+48694878064</h3>
+          </div>
+          <div class="contact-info-box col-md-4 col-sm-6 col-xs-6">
+            <i class="fas fa-map-marker-alt"></i>
+            <h3 id="contact_info address">
+              Piotrkowska 2a, lokal 3, 15-439, Białystok
+            </h3>
+          </div>
+          <div
+            id="location"
+            class="contact-info-box col-md-4 col-sm-12 col-xs-12"
+          >
+            <i class="far fa-envelope"></i>
+            <h3 id="contact_info">strefaurodybialystok@gmail.com</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 col-sm-12">
+            <form action="https://formspree.io/f/mgedollo" method="POST">
+              <div class="col-md-6 col-sm-6 col-xs-12">
+                <input
+                  name="name"
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="Imię"
+                />
+                <input
+                  name="email"
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="Adres Email"
+                />
+                <input
+                  name="subject"
+                  type="text"
+                  class="form-control"
+                  id="subject"
+                  placeholder="Tytuł"
+                />
+              </div>
+              <div class="col-md-6 col-sm-6 col-xs-12">
+                <textarea
+                  name="message"
+                  rows="7"
+                  class="form-control"
+                  id="message"
+                  placeholder="Wiadomość"
+                ></textarea>
+              </div>
+              <div class="col-md-offset-3 col-md-6 col-sm-12 col-xs-12">
+                <input
+                  name="submit"
+                  type="submit"
+                  class="form-control"
+                  id="submit"
+                  value="Wyślij"
+                />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- galeria section -->
     <section id="galeria">
       <div class="container">
@@ -591,84 +669,7 @@
         </div>
       </div>
     </section>
-
-
-    <!-- contact section -->
-    <section id="contact">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 col-sm-12 text-center">
-            <h1 class="heading heading-contact">Kontakt</h1>
-          </div>
-        </div>
-        <div class="row">
-          <div class="contact-info-box col-md-4 col-sm-6 col-xs-6">
-            <i class="fas fa-mobile-alt"></i>
-            <h3 id="contact_info">+48694878064</h3>
-          </div>
-          <div class="contact-info-box col-md-4 col-sm-6 col-xs-6">
-            <i class="fas fa-map-marker-alt"></i>
-            <h3 id="contact_info address">
-              Piotrkowska 2a, lokal 3, 15-439, Białystok
-            </h3>
-          </div>
-          <div
-            id="location"
-            class="contact-info-box col-md-4 col-sm-12 col-xs-12"
-          >
-            <i class="far fa-envelope"></i>
-            <h3 id="contact_info">strefaurodybialystok@gmail.com</h3>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12 col-sm-12">
-            <form action="https://formspree.io/f/mgedollo" method="POST">
-              <div class="col-md-6 col-sm-6 col-xs-12">
-                <input
-                  name="name"
-                  type="text"
-                  class="form-control"
-                  id="name"
-                  placeholder="Imię"
-                />
-                <input
-                  name="email"
-                  type="email"
-                  class="form-control"
-                  id="email"
-                  placeholder="Adres Email"
-                />
-                <input
-                  name="subject"
-                  type="text"
-                  class="form-control"
-                  id="subject"
-                  placeholder="Tytuł"
-                />
-              </div>
-              <div class="col-md-6 col-sm-6 col-xs-12">
-                <textarea
-                  name="message"
-                  rows="7"
-                  class="form-control"
-                  id="message"
-                  placeholder="Wiadomość"
-                ></textarea>
-              </div>
-              <div class="col-md-offset-3 col-md-6 col-sm-12 col-xs-12">
-                <input
-                  name="submit"
-                  type="submit"
-                  class="form-control"
-                  id="submit"
-                  value="Wyślij"
-                />
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
+    
 
     <!-- footer section -->
     <footer>
