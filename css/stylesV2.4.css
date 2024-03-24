@@ -612,6 +612,13 @@ footer .container::before {
     margin-bottom: 50px;
   }
 }
+
+@media screen and (max-width: 788px) {
+  #home .btn {
+    margin-bottom: 140px;
+  }
+}
+
 @media screen and (max-width: 500px) {
   #home h3 {
     letter-spacing: 1px;
